@@ -3,50 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Demo</title>
-  <link rel="stylesheet" href="style.css">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="stl.css">
 </head>
 <body>
+  <!-- Navbar -->
   <header>
-    <h1>Advanced Demo</h1>
-    <nav>
-      <button id="quizBtn">Quiz</button>
-      <button id="carouselBtn">Image Carousel</button>
-      <button id="apiBtn">Fetch Joke</button>
+    <nav class="navbar">
+      <h1 class="logo">MyPortfolio</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main>
-    <!-- Quiz Section -->
-    <section id="quizSection" class="hidden">
-      <h2>Interactive Quiz</h2>
-      <div id="quizContainer"></div>
-      <button id="submitQuiz">Submit</button>
-      <p id="quizResult"></p>
-    </section>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>Mr. NIBORAN MANDI <br>
 
-    <!-- Image Carousel -->
-    <section id="carouselSection" class="hidden">
-      <h2>Image Carousel</h2>
-      <div class="carousel">
-        <button id="prev">⟨</button>
-        <img id="carouselImage" src="https://fastly.picsum.photos/id/71/600/300.jpg?hmac=OzJM-EExYDdCKMjk4PNvzAQav0m5JUaWyD-ungVUwHg" alt="Carousel">
-        <button id="next">⟩</button>
+B.TECH IN CSE from SWAMI VIVEKANANDA UNIVERSITY.
+I am a dedicated and motivated student passionate about continuous learning, skill development, and exploring new opportunities that challenge my creativity and problem-solving abilities. My academic journey has equipped me with a strong foundation in [your subject/field, e.g., Computer Science / Business / Engineering], along with hands-on experience through projects, internships, and self-learning initiatives. I enjoy collaborating in team environments, adapting to new challenges, and applying theoretical knowledge to real-world situations. With a keen interest in [specific interest area, e.g., web development, data analytics, marketing strategy], I am committed to expanding my expertise while contributing positively to every project I undertake. My goal is to grow as a professional, build meaningful industry connections, and make a positive impact through my work and dedication.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>To-Do App</h3>
+        <p>A simple app to manage daily tasks with local storage support.</p>
       </div>
-    </section>
+      <div class="project-card">
+        <h3>Product Page</h3>
+        <p>A product listing page with filtering and sorting functionality.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- API Fetch -->
-    <section id="apiSection" class="hidden">
-      <h2>Random Joke</h2>
-      <p id="joke">Click the button to load a joke!</p>
-      <button id="loadJoke">Get Joke</button>
-    </section>
-  </main>
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
   <footer>
-    <p>Made by Dn Enterprise</p>
+    <p>© 2025 My Portfolio | All Rights Reserved</p>
   </footer>
 
-  <script src="logic.js"></script>
+  <script src="lgc.js"></script>
 </body>
 </html>
