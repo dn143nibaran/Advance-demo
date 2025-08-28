@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Advanced Demo</h1>
+    <nav>
+      <button id="quizBtn">Quiz</button>
+      <button id="carouselBtn">Image Carousel</button>
+      <button id="apiBtn">Fetch Joke</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Quiz Section -->
+    <section id="quizSection" class="hidden">
+      <h2>Interactive Quiz</h2>
+      <div id="quizContainer"></div>
+      <button id="submitQuiz">Submit</button>
+      <p id="quizResult"></p>
+    </section>
+
+    <!-- Image Carousel -->
+    <section id="carouselSection" class="hidden">
+      <h2>Image Carousel</h2>
+      <div class="carousel">
+        <button id="prev">⟨</button>
+        <img id="carouselImage" src="https://fastly.picsum.photos/id/71/600/300.jpg?hmac=OzJM-EExYDdCKMjk4PNvzAQav0m5JUaWyD-ungVUwHg" alt="Carousel">
+        <button id="next">⟩</button>
+      </div>
+    </section>
+
+    <!-- API Fetch -->
+    <section id="apiSection" class="hidden">
+      <h2>Random Joke</h2>
+      <p id="joke">Click the button to load a joke!</p>
+      <button id="loadJoke">Get Joke</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made by Dn Enterprise</p>
+  </footer>
+
+  <script src="logic.js"></script>
+</body>
+</html>

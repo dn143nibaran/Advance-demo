@@ -1,0 +1,93 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f9;
+  color: #333;
+  text-align: center;
+}
+/* https://github.com/dn143nibaran/Advance-demo.git */
+/* https://github.com/dn143nibaran/Advance-demo */
+header {
+  background: #4caf89;
+  color: white;
+  padding: 1rem;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav button {
+  margin: 0.5rem;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: white;
+  color: #4CAF50;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav button:hover {
+  background: #333;
+  color: white;
+}
+
+section {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 600px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Carousel */
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel img {
+  width: 80%;
+  border-radius: 12px;
+}
+
+.carousel button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav button {
+    display: block;
+    margin: 0.5rem auto;
+    width: 80%;
+  }
+  .carousel img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  section {
+    padding: 0.5rem;
+  }
+}
